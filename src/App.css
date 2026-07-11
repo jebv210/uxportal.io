@@ -1,0 +1,40 @@
+/* Print styles for Usability website */
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+  
+  /* Hide all interactive navigation components when printing */
+  header,
+  .header-nav,
+  .a11y-widget,
+  .keyboard-assist-bar,
+  .btn,
+  .no-print,
+  .simulator-card,
+  .simulator-stats,
+  footer,
+  .footer {
+    display: none !important;
+  }
+
+  #root {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  .glass-card {
+    border: 1px solid #cbd5e1 !important;
+    box-shadow: none !important;
+    background: none !important;
+  }
+}
